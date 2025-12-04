@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SR Fashion Hub</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #000;
+    color: white;
+}
+
+/* Header */
+header {
+    background: black;
+    padding: 20px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: gold;
+    letter-spacing: 2px;
+}
+
+/* SLIDER */
+.slider {
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    width: 400%;
+    animation: slide 12s infinite;
+}
+
+.slides img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% {margin-left: 0;}
+    25% {margin-left: -100%;}
+    50% {margin-left: -200%;}
+    75% {margin-left: -300%;}
+    100% {margin-left: 0;}
+}
+
+/* Categories */
+.section-title {
+    text-align: center;
+    color: gold;
+    font-size: 28px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    background: #111;
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid gold;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.item p {
+    margin-top: 8px;
+    font-size: 16px;
+    color: gold;
+    font-weight: bold;
+}
+
+/* Contact Form */
+form {
+    background: #111;
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid gold;
+    border-radius: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    background: #222;
+    border: 1px solid gold;
+    color: white;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: gold;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>SR FASHION HUB</header>
+
+<!-- SLIDER SECTION -->
+<div class="slider">
+    <div class="slides">
+        <img src="banner1.png">
+        <img src="banner2.png">
+        <img src="banner3.png">
+        <img src="banner4.png">
+    </div>
+</div>
+
+<!-- PRODUCTS SECTION -->
+<h2 class="section-title">Our Collections</h2>
+
+<div class="products">
+
+    <div class="item">
+        <img src="shirt1.png">
+        <p>Mens Wear</p>
+    </div>
+
+    <div class="item">
+        <img src="watch1.png">
+        <p>Watches</p>
+    </div>
+
+    <div class="item">
+        <img src="shoe1.png">
+        <p>Shoes</p>
+    </div>
+
+    <div class="item">
+        <img src="belt1.png">
+        <p>Belts</p>
+    </div>
+
+    <div class="item">
+        <img src="chain1.png">
+        <p>Chains</p>
+    </div>
+
+    <div class="item">
+        <img src="mobile1.png">
+        <p>Mobiles</p>
+    </div>
+
+</div>
+
+<!-- CONTACT FORM -->
+<h2 class="section-title">Order Form</h2>
+
+<form action="mailto:srfashionhub99@gmail.com" method="POST" enctype="text/plain">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="number" name="phone" placeholder="Phone Number" required>
+    <input type="text" name="address" placeholder="Full Address" required>
+    <input type="number" name="pincode" placeholder="Pincode" required>
+    <input type="text" name="state" placeholder="State" required>
+    <input type="text" name="district" placeholder="District" required>
+    <textarea name="product" placeholder="Product Name / Size / Color"></textarea>
+    <button type="submit">Submit Order</button>
+</form>
+
+<h2 class="section-title">Contact</h2>
+<p style="text-align:center; color:white;">
+    📞 9966016696 <br>
+    📧 srfashionhub99@gmail.com <br>
+    📷 Instagram: @srfashionhub_sr
+</p>
+
+</body>
+</html>
